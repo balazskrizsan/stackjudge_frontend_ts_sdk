@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/balazskrizsan/stackjudge_frontend_ts_sdk.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "krizsan.balazs@gmail.com",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/balazskrizsan/stackjudge_frontend_ts_sdk/issues"
   },
