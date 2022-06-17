@@ -1,0 +1,19 @@
+{
+  "name": "stackjudge_frontend_ts_sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balazskrizsan/stackjudge_frontend_ts_sdk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balazskrizsan/stackjudge_frontend_ts_sdk/issues"
+  },
+  "homepage": "https://github.com/balazskrizsan/stackjudge_frontend_ts_sdk#readme"
+}
