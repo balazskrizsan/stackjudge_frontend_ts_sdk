@@ -7,7 +7,7 @@ export const API_URL = "/account/get-by-review-id/{reviewId}";
 /**
  * @Generated("OpenSDK: https://github.com/balazskrizsan/OpenSdk")
  */
-interface IAccountGetByReviewIdByReviewId
+export interface IAccountGetByReviewIdByReviewId
 {
     get(getByReviewIdRequest: IOpenSdkGetable): StdResponse<User>;
 }
