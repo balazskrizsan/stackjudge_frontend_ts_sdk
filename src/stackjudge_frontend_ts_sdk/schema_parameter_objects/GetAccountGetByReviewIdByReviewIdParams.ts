@@ -1,11 +1,11 @@
 import {IOpenSdkGetable} from "../../common/intercaes/IOpenSdkGetable";
 import {IOpenSdkPostable} from "../../common/intercaes/IOpenSdkPostable";
-import {User} from "./User";
+import * as valueObject from "./index";
 
 /**
 * @Generated("OpenSDK: https://github.com/balazskrizsan/OpenSdk")
 */
-export class GetByReviewIdRequest implements IOpenSdkGetable
+export class GetAccountGetByReviewIdByReviewIdParams implements IOpenSdkGetable
 {
     public constructor(
         private reviewId: number,
