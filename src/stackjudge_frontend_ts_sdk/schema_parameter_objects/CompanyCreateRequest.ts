@@ -5,17 +5,13 @@ import * as valueObject from "./index";
 /**
 * @Generated("OpenSDK: https://github.com/balazskrizsan/OpenSdk")
 */
-export class GetAccountGetByReviewIdByReviewIdParams implements IOpenSdkGetable
+export class CompanyCreateRequest
 {
     public constructor(
-        private reviewId: number,
+        private name: string,
+        private domain: string,
+        private companySizeId: number,
+        private itSizeId: number,
     ) {
-    }
-
-    public toOpenSdkGet()
-    {
-        return {
-            "reviewId": this.reviewId,
-        }
     }
 }
