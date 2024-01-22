@@ -1,41 +1,57 @@
+import { CompanySearchServiceResponse } from "./CompanySearchServiceResponse";
+import { ResponseDataString } from "./ResponseDataString";
 import { CompanyCreateRequest } from "./CompanyCreateRequest";
 import { AddressCreateRequest } from "./AddressCreateRequest";
-import { Address } from "./Address";
-import { ResponseDataString } from "./ResponseDataString";
-import { CompanySearchServiceResponse } from "./CompanySearchServiceResponse";
-import { CompanyStatistic } from "./CompanyStatistic";
 import { Company } from "./Company";
+import { CompanyGroupsMap } from "./CompanyGroupsMap";
+import { PaginatorItem } from "./PaginatorItem";
+import { CompanyStatisticsMap } from "./CompanyStatisticsMap";
+import { CompanyAddressesMap } from "./CompanyAddressesMap";
+import { companyAddressMapsMap } from "./companyAddressMapsMap";
+import { CompanyReviewsMap } from "./CompanyReviewsMap";
+import { CompanyOwnersMap } from "./CompanyOwnersMap";
+import { CompanyUsersMap } from "./CompanyUsersMap";
+import { RecursiveGroupTree } from "./RecursiveGroupTree";
+import { CompanyStatistic } from "./CompanyStatistic";
 import { CompanyAddresses } from "./CompanyAddresses";
+import { CompanyAddressesMapsByMapIdMap } from "./CompanyAddressesMapsByMapIdMap";
+import { ReviewsMap } from "./ReviewsMap";
 import { CompanyOwners } from "./CompanyOwners";
 import { IdsUser } from "./IdsUser";
-import { PaginatorItem } from "./PaginatorItem";
 import { RecursiveGroup } from "./RecursiveGroup";
-import { RecursiveGroupTree } from "./RecursiveGroupTree";
-import { ResponseDataCompanySearchServiceResponse } from "./ResponseDataCompanySearchServiceResponse";
+import { Address } from "./Address";
+import { CompanyAddressMapsStaticMapResponseMap } from "./CompanyAddressMapsStaticMapResponseMap";
 import { Review } from "./Review";
 import { StaticMapResponse } from "./StaticMapResponse";
-import { GetRequest } from "./GetRequest";
 import { PostCompany } from "./PostCompany";
 import { GetCompanyParams } from "./GetCompanyParams";
 
 export {
+    CompanySearchServiceResponse,
+    ResponseDataString,
     CompanyCreateRequest,
     AddressCreateRequest,
-    Address,
-    ResponseDataString,
-    CompanySearchServiceResponse,
-    CompanyStatistic,
     Company,
+    CompanyGroupsMap,
+    PaginatorItem,
+    CompanyStatisticsMap,
+    CompanyAddressesMap,
+    companyAddressMapsMap,
+    CompanyReviewsMap,
+    CompanyOwnersMap,
+    CompanyUsersMap,
+    RecursiveGroupTree,
+    CompanyStatistic,
     CompanyAddresses,
+    CompanyAddressesMapsByMapIdMap,
+    ReviewsMap,
     CompanyOwners,
     IdsUser,
-    PaginatorItem,
     RecursiveGroup,
-    RecursiveGroupTree,
-    ResponseDataCompanySearchServiceResponse,
+    Address,
+    CompanyAddressMapsStaticMapResponseMap,
     Review,
     StaticMapResponse,
-    GetRequest,
     PostCompany,
     GetCompanyParams,
 }

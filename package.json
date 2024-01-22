@@ -1,15 +1,15 @@
 {
   "name": "stackjudge_frontend_ts_sdk",
-  "version": "1.0.0",
+  "version": "1.0.21",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean:ts": "rm -rf build",
+    "build:ts": "npm run clean:ts && tsc -p .",
+    "build": "npm run build:doc && npm run build:ts"
   },
-  "files": [
-    "src/"
-  ],
   "dependencies": {
+    "@angular/common": "^14.2.2",
     "rxjs": "^7.5.6"
   },
   "repository": {

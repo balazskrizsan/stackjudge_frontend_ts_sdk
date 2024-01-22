@@ -1,8 +1,9 @@
-import {IOpenSdkGetable} from "../../common/intercaes/IOpenSdkGetable";
-import {IOpenSdkPostable} from "../../common/intercaes/IOpenSdkPostable";
-import {StdResponse} from "../../common/entities/StdResponse";
-import * as valueObject from "./../schema_parameter_objects/index";
-import {Observable} from "rxjs";
+import {IOpenSdkGetable}  from "../../common/interfaces/IOpenSdkGetable";
+import {IOpenSdkPostable} from "../../common/interfaces/IOpenSdkPostable";
+import {StdResponse}      from "../../common/entities/StdResponse";
+import * as valueObject   from "./../schema_parameter_objects/index";
+import {HttpParams}       from "@angular/common/http";
+import {Observable}       from "rxjs";
 
 export const API_URL = "/company"; 
 
@@ -11,6 +12,6 @@ export const API_URL = "/company";
  */
 export interface ICompany
 {
-    get(getCompanyParams: IOpenSdkGetable): Observable<StdResponse<valueObject.CompanySearchServiceResponse>>;
+    get(getCompanyParams: IOpenSdkGetable): Observable<StdResponse<valueObject.Company[]>>;
     post(postCompany: IOpenSdkPostable): StdResponse<string>;
 }

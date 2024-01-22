@@ -1,5 +1,6 @@
-import {IOpenSdkGetable} from "../../common/intercaes/IOpenSdkGetable";
-import {IOpenSdkPostable} from "../../common/intercaes/IOpenSdkPostable";
+import {IOpenSdkGetable}  from "../../common/interfaces/IOpenSdkGetable";
+import {IOpenSdkPostable} from "../../common/interfaces/IOpenSdkPostable";
+import {HttpParams}       from "@angular/common/http";
 import * as valueObject from "./index";
 
 /**
@@ -16,5 +17,40 @@ export class Review
         private createdAt: string,
         private createdBy: string,
     ) {
+    }
+
+    public toAngularHttpParams(): HttpParams
+    {
+        // @ts-ignore
+        return new HttpParams()
+            .set("id", this.id.toString(10)) //integer
+            .set("groupId", this.groupId.toString(10)) //integer
+            .set("visibility", this.visibility.toString(10)) //integer
+            .set("rate", this.rate.toString(10)) //integer
+            .set("review", this.review) //string
+            .set("createdAt", this.createdAt) //string
+            .set("createdBy", this.createdBy) //string
+        ;
+    }
+
+    public toOpenSdkJson()
+    {
+        return {
+            "id": this.id,
+            "groupId": this.groupId,
+            "visibility": this.visibility,
+            "rate": this.rate,
+            "review": this.review,
+            "createdAt": this.createdAt,
+            "createdBy": this.createdBy,
+        }
+    }
+
+    public toSdkString = () : string => {
+        return JSON.stringify(this);
+    }
+
+    public toSdkStringFromType<T>(x: T)  {
+        return JSON.stringify(x);
     }
 }
