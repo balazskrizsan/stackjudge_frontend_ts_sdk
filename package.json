@@ -9,7 +9,7 @@
     "build": "npm run build:doc && npm run build:ts"
   },
   "dependencies": {
-    "@angular/common": "^14.2.2",
+    "@angular/common": "^19.2.16",
     "rxjs": "^7.5.6"
   },
   "repository": {
